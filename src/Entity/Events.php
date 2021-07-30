@@ -27,6 +27,10 @@ class Events
      */
     private $dateEvent;
 
+    public function __construct()
+    {
+        $this->dateEvent=new \DateTime();
+    }
     /**
      * @ORM\Column(type="string", length=255)
      */
